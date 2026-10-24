@@ -1,6 +1,11 @@
 # ECO346-A1-FA24-BED-008
 ECO346 Assignment 1 - Data Visualization
 
+Name: Afifa Farooq
+Registration Number: FA24-BEDS-008
+Course: ECO346 - Data Visualization Techniques for Economists
+Variant: 0 - Punjab rural
+
 
 Question 2: Education Spending Distribution
 
@@ -46,9 +51,9 @@ Literacy rates are higher among men than women across all age
 groups in rural Punjab. The difference is relatively small 
 among younger people but becomes much larger in older age groups.
 For ages 15–19, men's literacy is 79.8%, compared with 73.1% for 
-women.Among those aged 55–59, men's literacy is 50.8%, while
+women. Among those aged 55–59, men's literacy is 50.8%, while
 women's literacy is only 15.0%, creating the largest gap of 
-35.8 percentage points.However, this figure cannot explain why
+35.8 percentage points. However, this figure cannot explain why
 these gender differences exist or establish whether age itself
 causes lower literacy.
 
@@ -72,7 +77,7 @@ causes lower literacy.
 
 
 Question 4: The Makeover
-The default scatterplot has overlapping points,making it 
+The default scatterplot has overlapping points, making it 
 difficult to see patterns in the data. The redesigned figure
 uses lines and markers to show literacy rates across age 
 groups, making comparisons between men and women easier.
@@ -102,3 +107,15 @@ I explicitly set the axis labels, age-band midpoints, and
 vertical axis limits to match the R figure. This makes the
 figures easier to compare and ensures that both display the
 same literacy rates across age groups.
+
+
+## Figures
+
+### Question 2: Education Spending Distribution
+
+![Education Spending Distribution](figures/02_distribution.svg)
+
+### Question 3: Literacy by Age and Sex
+
+![Literacy by Age and Sex](figures/04_redesigned.svg)
+
