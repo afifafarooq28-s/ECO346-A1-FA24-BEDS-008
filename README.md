@@ -1,9 +1,7 @@
 # ECO346-A1-FA24-BED-008
 ECO346 Assignment 1 - Data Visualization
 
-Name: Afifa Farooq
-Registration Number: FA24-BEDS-008
-Course: ECO346 - Data Visualization Techniques for Economists
+
 Variant: 0 - Punjab rural
 
 
