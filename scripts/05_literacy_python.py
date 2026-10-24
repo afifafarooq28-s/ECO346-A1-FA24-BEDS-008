@@ -9,8 +9,8 @@ Original file is located at
 
 import pandas as pd
 
-person = pd.read_csv('/content/pslm_person_subset.csv')
-hh = pd.read_csv('/content/pslm_hh_subset.csv')
+person = pd.read_csv('data/pslm_person_subset.csv')
+hh = pd.read_csv('data/pslm_hh_subset.csv')
 
 print(person.shape)
 print(hh.shape)
@@ -73,5 +73,5 @@ plt.title('Literacy rates by age and sex in rural Punjab')
 plt.xticks(range(12, 63, 5))
 plt.ylim(0, 100)
 plt.legend()
-plt.savefig('q5_literacy.svg', format='svg', bbox_inches='tight')
+plt.savefig('figures/q5_literacy.svg', format='svg', bbox_inches='tight')
 plt.show()
