@@ -70,3 +70,35 @@ causes lower literacy.
 | 60–64     | 497     | 45.5              | 412         | 12.3 |
 
 
+
+Question 4: The Makeover
+The default scatterplot has overlapping points,making it 
+difficult to see patterns in the data. The redesigned figure
+uses lines and markers to show literacy rates across age 
+groups, making comparisons between men and women easier.
+Direct labels replace the legend, reducing the need for
+readers to look back and forth. The annotation highlights
+the age group with the largest gender gap, drawing attention
+to the main finding. These changes follow the principles of
+reducing clutter, improving visual clarity, and directing 
+attention to important information. However, the redesigned 
+figure hides the individual observations and their distribution, 
+which are visible in the default scatterplot.
+
+
+Question 5: Python Reproduction
+
+Women's literacy rate, ages 15–19, using R: 73.1%
+Women's literacy rate, ages 15–19, using Python: 73.1%
+The Python band table matches the R results to one decimal place.
+
+
+Interpretation
+
+The literacy rates calculated in Python match the R results
+to one decimal place. One difference between the two languages
+is their default plotting styles and axis formatting. In Python, 
+I explicitly set the axis labels, age-band midpoints, and
+vertical axis limits to match the R figure. This makes the
+figures easier to compare and ensures that both display the
+same literacy rates across age groups.
