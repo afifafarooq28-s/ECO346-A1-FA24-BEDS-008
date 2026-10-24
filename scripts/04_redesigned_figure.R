@@ -110,17 +110,19 @@ p <- ggplot(
   
   scale_y_continuous(limits = c(0, 100)) +
   labs(
-    title = "Literacy differs between men and women across age groups",
+    title = "The literacy gap between men and women widens with age in rural Punjab",
     subtitle = "Rural Punjab, ages 10–64",
     x = "Age band",
     y = "Weighted literacy rate (%)",
-    caption = "Source: PSLM person and household data. Rural Punjab residents aged 10–64 with reported literacy status; weighted by household sampling weights. Hollow markers indicate fewer than 30 unweighted observations."
+    caption = "Source: PSLM 2019-20 person and household data. Sample: rural Punjab residents aged 10-64 with reported literacy status.\nWeighted by household weight (hhweight). Hollow markers indicate fewer than 30 unweighted observations."
   ) +
   coord_cartesian(clip = "off") +
   theme_minimal() +
   theme(
     legend.position = "none",
     plot.title = element_text(face = "bold"),
+    plot.caption = element_text(hjust = 0),
+    plot.caption.position = "plot",
     plot.margin = margin(5.5, 45, 5.5, 5.5)
   )
 

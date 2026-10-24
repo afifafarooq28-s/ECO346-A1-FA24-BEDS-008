@@ -77,20 +77,18 @@ p <- ggplot(plot_data, aes(x = log_spend, weight = hhweight)) +
   ) +
   annotate(
     "text",
-    x = 3.82,
+    x = log10(median_weighted) - 0.04,
     y = 1.45,
-    label = "Median: Rs 6,600",
-    angle = 0,
-    hjust = 0.5,
+    label = paste0("Median: Rs ", format(median_weighted, big.mark = ",", scientific = FALSE)),
+    hjust = 1,
     size = 3
   ) +
   annotate(
     "text",
-    x = 4.55,
+    x = log10(p90_weighted) + 0.04,
     y = 1.25,
-    label = "90th percentile: Rs 30,000",
-    angle = 0,
-    hjust = 0.5,
+    label = paste0("90th percentile: Rs ", format(p90_weighted, big.mark = ",", scientific = FALSE)),
+    hjust = 0,
     size = 3
   ) +
   scale_x_continuous(
@@ -102,10 +100,14 @@ p <- ggplot(plot_data, aes(x = log_spend, weight = hhweight)) +
     subtitle = "Annual education spending among students in rural Punjab",
     x = "Annual education spending (Rs, log scale)",
     y = "Weighted density per log10 unit",
-    caption = "Source: PSLM person and household data. Students with positive education spending; weighted by household sampling weights. Three observations outside the plotted range."
+    caption = "Source: PSLM 2019-20 person and household data. Sample: students in rural Punjab with ed_total > 0 (n = 9,173).\nWeighted by household weight (hhweight). 3 students outside Rs 100 to Rs 1,000,000 are excluded."
   ) +
-  coord_cartesian(ylim = c(0, 1.7), clip = "off") +
-  theme_minimal()
+  coord_cartesian(xlim = c(2, 6), ylim = c(0, 1.7), clip = "off") +
+  theme_minimal() +
+  theme(
+    plot.caption = element_text(hjust = 0),
+    plot.caption.position = "plot"
+  )
 
 p
 
